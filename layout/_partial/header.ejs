@@ -1,0 +1,21 @@
+<div class="header-out">
+  <div class="header-inner">
+    <div class="section" id="header">
+      <div class="header-left">
+        <div class="header-title">
+          <% if (theme.imglogo.enable&&theme.imglogo.src){ %>
+            <a class="logo" href="/.">
+              <img height="50" src="<%- config.root %><%= theme.imglogo.src %>" alt="<%= config.title %>" title="<%= config.title %>"/>
+            </a>
+          <% } %>
+          <a href="/.">
+            <h2><%= config.title %></h2>
+          </a>
+        </div>
+        <% if (theme.subtitle){ %>
+        <div class="header-desc"><%= theme.subtitle %></div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>

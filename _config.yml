@@ -1,0 +1,44 @@
+# Header
+navbar_brand: false
+menu:
+  Home: index.html
+  Archives: archives/
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: false
+
+# Sidebar
+widgets:
+- search
+- about         # See also: `about_content`
+- category
+- tag
+- archive
+- recent_posts
+about_widget_content: >
+  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.
+  Cras mattis consectetur purus sit amet fermentum. Aenean
+  lacinia bibendum nulla sed consectetur.</p>
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
+# Miscellaneous
+google_analytics:
+twitter_id:
+google_plus:
+fb_admins:
+fb_app_id:
+
+# Image
+imglogo:
+  enable: true            ## display image log, true/false
+  src: img/eblogger.png   ## `.svg`and `.png` are recommended, please put image log into the theme folder `/blogger/source/img`.
+favicon: img/favicon.ico  ## size:32px*32px, `.icon` is recommended, please put image into the theme folder `/blogger/source/img`.
+imgbg: img/bg.png         ## size:214px*121px, background image for about module
+
+google_search: true       ## user google search, true/false
+baidu_search:             ## user baidu search, true/false

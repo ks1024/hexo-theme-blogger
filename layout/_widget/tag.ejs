@@ -1,0 +1,11 @@
+<% if (site.tags.length){ %>
+  <div class="sidebar-module">
+    <i class="fa fa-tag" aria-hidden="true"></i>
+    <button class="btn btn-tag" type="button" data-toggle="collapse" data-target="#collapseTag" aria-expanded="false" aria-controls="collapseTag">
+        Labels
+    </button>
+    <div class="collapse" id="collapseTag">
+        <%- list_tags({show_count: theme.show_count, class: 'sidebar-module'}) %>
+    </div>
+  </div>
+<% } %>

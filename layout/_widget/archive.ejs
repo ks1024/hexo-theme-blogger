@@ -1,0 +1,10 @@
+<% if (site.posts.length){ %>
+  <div class="sidebar-module">
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseArchive" aria-expanded="false" aria-controls="collapseArchive">
+      Archives
+    </button>
+    <div class="collapse" id="collapseArchive">
+      <%- list_archives({show_count: theme.show_count, type: theme.archive_type, class: 'sidebar-module'}) %>
+    </div>
+  </div>
+<% } %>

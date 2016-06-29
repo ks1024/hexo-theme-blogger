@@ -1,5 +1,5 @@
 <% if (site.posts.length){ %>
-  <div class="sidebar-module">
+  <div class="sidebar-module recent-posts">
     <h4>Recents</h4>
     <ul class="sidebar-module-list">
       <% site.posts.sort('date', -1).limit(5).each(function(post){ %>

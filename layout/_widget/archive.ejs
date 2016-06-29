@@ -1,8 +1,12 @@
 <% if (site.posts.length){ %>
-  <div class="sidebar-module">
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseArchive" aria-expanded="false" aria-controls="collapseArchive">
-      Archives
-    </button>
+  <div class="sidebar-module archive">
+    <div class="tab">
+    <i class="fa fa-archive" aria-hidden="true"></i>
+      <h2 data-toggle="collapse" data-target="#collapseArchive" aria-expanded="false" aria-controls="collapseArchive">
+        Archives
+      </h2>
+      <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </div>
     <div class="collapse" id="collapseArchive">
       <%- list_archives({show_count: theme.show_count, type: theme.archive_type, class: 'sidebar-module'}) %>
     </div>

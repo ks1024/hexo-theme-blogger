@@ -253,32 +253,22 @@ code {
   margin-bottom: 0;
 }
 
-/* Sidebar widget tag */
+/* Sidebar widget */
 .sidebar-module {
   border-bottom: 1px solid #eee;
-}
-.sidebar-module .fa-tag,
-.sidebar-module .fa-folder,
-.sidebar-module .fa-archive {
-  font-size: 24px;
 }
 .sidebar-module h2 {
   font-size: 14px;
   line-height: 24px;
   display: inline-block;
   margin: 0px;
+  vertical-align: top;
+  padding-left: 8px;
 }
-.sidebar-module .fa-caret-down {
-  float: right;
-  font-size: 18px;
-  line-height: 24px;
-}
-
 .sidebar-module-inset .section {
   border: 1px solid #eee;
   padding-bottom: 10px;
 }
-
 .sidebar-module-inset .avatar {
   width: 85px;
   height: 85px;
@@ -340,8 +330,12 @@ code {
 }
 
 .sidebar-module-list {
-  padding-left: 0;
+  padding-left: 2px;
   list-style: none;
+}
+.sidebar-module-list-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .sidebar-module-list-child {
   padding-left: 25px;
@@ -364,9 +358,8 @@ code {
   background-color: #fff;
   border-color: #fff;
 }
- * Blog posts
- */
 
+/* Blog post */
 .article {
   margin-bottom: 60px;
 }
@@ -411,8 +404,8 @@ code {
 
 /* article footer content */
 .article-footer {
+  border-top: none;
   font-size: 0.85em;
-  border-top: 1px solid #eee;
   padding-top: 15px;
 }
 .article-footer:after { /* clearfix */
@@ -429,6 +422,10 @@ code {
 .article-footer a:hover {
   color: #666;
   text-decoration: underline;
+}
+.article-share-btn img {
+  vertical-align: top;
+  float: right;
 }
 
 /*

@@ -6,8 +6,9 @@
 
   <div class="article-meta">
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <% if (post.author){ %><div class="article-author"><%= post.author %></div><% } %>
-    <%- partial('post/category') %>
+    <% if (!index){ %>
+      <%- partial('post/category') %>
+    <% } %>
   </div>
   <div class="article-inner">
 
@@ -29,15 +30,30 @@
     <% } %>
 
     <footer class="article-footer">
+      <i class="material-icons">comment</i>
+
+      <a href="https://twitter.com/intent/tweet?url=" class="article-share-btn" target="_blank" title="Twitter">
+        <img height="24" width="24" src="<%= theme.twitter %>"/>
+      </a>
+      <a href="https://www.facebook.com/sharer.php?url=" class="article-share-btn" target="_blank" title="Facebook">
+        <img height="24" width="24" src="<%= theme.facebook %>"/>
+      </a>
+      <a href="https://plus.google.com/share?url=" class="article-share-btn" target="_blank" title="Google+">
+        <img height="24" width="24" src="<%= theme.googleplus %>"/>
+      </a>
+      <!--
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
+      -->
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">
           <i class="fa fa-comment"></i> Comments
         </a>
       <% } %>
-      <%- partial('post/tag') %>
+      <%if (!index){ %>
+        <%- partial('post/tag') %>
+      <% } %>
     </footer>
   </div>
   <% if (!index){ %>

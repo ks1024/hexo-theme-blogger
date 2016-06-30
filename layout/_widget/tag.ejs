@@ -1,11 +1,11 @@
 <% if (site.tags.length){ %>
   <div class="sidebar-module tag">
     <div class="tab">
-      <i class="fa fa-tag" aria-hidden="true"></i>
+      <i class="material-icons">label</i>
       <h2 data-toggle="collapse" data-target="#collapseTag" aria-expanded="false" aria-controls="collapseTag">
         Labels
       </h2>
-      <i class="fa fa-caret-down" aria-hidden="true"></i>
+      <i class="material-icons right">keyboard_arrow_down</i>
     </div>
     <div class="content collapse" id="collapseTag">
         <%- list_tags({show_count: theme.show_count, class: 'sidebar-module'}) %>

@@ -1,11 +1,11 @@
 <% if (site.categories.length){ %>
   <div class="sidebar-module category">
     <div class="tab">
-      <i class="fa fa-folder" aria-hidden="true"></i>
+      <i class="material-icons">folder</i>
       <h2 data-toggle="collapse" data-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
         Categories
       </h2>
-      <i class="fa fa-caret-down" aria-hidden="true"></i>
+      <i class="material-icons right">keyboard_arrow_down</i>
     </div>
     <div class="content collapse" id="collapseCategory">
         <%- list_categories({show_count: theme.show_count, class: 'sidebar-module'}) %>

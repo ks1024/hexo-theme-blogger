@@ -39,6 +39,9 @@ imglogo:
   src: img/eblogger.png   ## `.svg`and `.png` are recommended, please put image log into the theme folder `/blogger/source/img`.
 favicon: img/favicon.ico  ## size:32px*32px, `.icon` is recommended, please put image into the theme folder `/blogger/source/img`.
 imgbg: img/bg.png         ## size:214px*121px, background image for about module
+googleplus: img/gplus.png
+facebook: img/facebook.png
+twitter: img/twitter.png
 
 google_search: true       ## user google search, true/false
 baidu_search:             ## user baidu search, true/false

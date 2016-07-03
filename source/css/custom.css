@@ -415,17 +415,31 @@ code {
   height: 0;
   clear: both;
 }
-.article-footer a {
-  color: #999;
-  text-decoration: none;
-}
-.article-footer a:hover {
-  color: #666;
-  text-decoration: underline;
+.article-footer i {
+  opacity: 0.54;
 }
 .article-share-btn img {
   vertical-align: top;
   float: right;
+  opacity: 0.54;
+  margin-left: 15px;
+}
+.article-share-btn img:hover {
+  opacity: 0.87;
+}
+.article-footer .labels-caption {
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #444;
+}
+.article-footer .label-footer a {
+  color: #4184F3;
+  font-size: 12px;
+}
+.article-footer .label-footer a:hover {
+  text-decoration: none;
 }
 
 /*

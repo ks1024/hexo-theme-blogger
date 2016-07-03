@@ -79,15 +79,6 @@
   display: inline-block;
   margin-right: 15px;
 }
-.article-tag-list-link:before {
-  display: inline-block;
-  font-family: FontAwesome;
-  content: "\f02b";
-  margin-right: 0.25em;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
 .article-footer {
   border-top: 1px solid #eee;
   padding-top: 15px;

@@ -30,30 +30,23 @@
     <% } %>
 
     <footer class="article-footer">
-      <i class="material-icons">comment</i>
-
-      <a href="https://twitter.com/intent/tweet?url=" class="article-share-btn" target="_blank" title="Twitter">
+      <i class="article-comment-count material-icons">comment</i>
+      <a href="https://twitter.com/intent/tweet?url=<%- post.permalink %>" class="article-share-btn" target="_blank" title="Twitter">
         <img height="24" width="24" src="<%= theme.twitter %>"/>
       </a>
-      <a href="https://www.facebook.com/sharer.php?url=" class="article-share-btn" target="_blank" title="Facebook">
+      <a href="https://www.facebook.com/sharer.php?url=<%- post.permalink %>" class="article-share-btn" target="_blank" title="Facebook">
         <img height="24" width="24" src="<%= theme.facebook %>"/>
       </a>
-      <a href="https://plus.google.com/share?url=" class="article-share-btn" target="_blank" title="Google+">
+      <a href="https://plus.google.com/share?url=<%- post.permalink %>" class="article-share-btn" target="_blank" title="Google+">
         <img height="24" width="24" src="<%= theme.googleplus %>"/>
       </a>
-      <!--
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      -->
+
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">
           <i class="fa fa-comment"></i> Comments
         </a>
       <% } %>
-      <%if (!index){ %>
-        <%- partial('post/tag') %>
-      <% } %>
+      <%- partial('post/tag') %>
     </footer>
   </div>
   <% if (!index){ %>

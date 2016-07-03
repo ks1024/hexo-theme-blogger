@@ -7,7 +7,8 @@ rss: /atom.xml
 
 # Content
 excerpt_link: Read More
-fancybox: false
+fancybox: true
+highlight: true
 
 # Sidebar
 widgets:
@@ -17,10 +18,9 @@ widgets:
 - category
 - tag
 - archive
+about_widget_name: Blogger
 about_widget_content: >
-  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.
-  Cras mattis consectetur purus sit amet fermentum. Aenean
-  lacinia bibendum nulla sed consectetur.</p>
+  <p>This is <strong>custom content</strong> for the "about" sidebar widget.</p>
 
 # widget behavior
 archive_type: 'monthly'
@@ -36,7 +36,7 @@ fb_app_id:
 # Image
 imglogo:
   enable: true            ## display image log, true/false
-  src: img/eblogger.png   ## `.svg`and `.png` are recommended, please put image log into the theme folder `/blogger/source/img`.
+  src: img/blogger.png   ## `.svg`and `.png` are recommended, please put image log into the theme folder `/blogger/source/img`.
 favicon: img/favicon.ico  ## size:32px*32px, `.icon` is recommended, please put image into the theme folder `/blogger/source/img`.
 imgbg: img/bg.png         ## size:214px*121px, background image for about module
 googleplus: img/gplus.png

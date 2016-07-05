@@ -498,3 +498,28 @@ code {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/*
+ * Pagger
+ */
+.blog-pager {
+  text-align: right;
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+}
+.blog-pager i {
+  color: black;
+  opacity: 0.54;
+  margin-left: 16px;
+}
+#blog-pager-older-link i:hover,
+#blog-pager-newer-link i:hover {
+  opacity: 0.87;
+  cursor: pointer;
+}
+.blog-pager a:hover {
+  text-decoration: none;
+}
+.blog-pager .disabled {
+  opacity: 0.2 !important;
+}

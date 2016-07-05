@@ -1,22 +1,21 @@
-<div class="pager">
-  <a class="home-link"><i class="material-icons">home</i></a>
+<div class="blog-pager">
+  <a class="home-link" href="/"><i class="material-icons">home</i></a>
     <% if (page.prev){ %>
       <span id="blog-pager-newer-link">
-        <a href="<%- config.root %><%- page.prev_link %>">
+        <a title="Newer posts" href="<%- config.root %><%- page.prev_link %>">
           <i class="material-icons">arrow_back</i>
         </a>
       </span>
-      <!--<li class="previous"><a href="<%- config.root %><%- page.prev_link %>">&larr;  <%- __('next')%></a></li>-->
     <% } else{ %>
-      <i class="material-icons">arrow_back</i>
+      <i class="material-icons disabled">arrow_back</i>
     <% } %>
     <% if (page.next){ %>
       <span id="blog-pager-older-link">
-        <a href="<%- config.root %><%- page.next_link %>">
+        <a title="Order posts" href="<%- config.root %><%- page.next_link %>">
           <i class="material-icons">arrow_forward</i>
         </a>
       </span>
     <% } else{ %>
-      <i class="material-icons">arrow_forward</i>
+      <i class="material-icons disabled">arrow_forward</i>
     <% } %>
 </div>

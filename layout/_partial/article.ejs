@@ -32,13 +32,13 @@
     <footer class="article-footer">
       <i class="article-comment-count material-icons">comment</i>
       <a href="https://twitter.com/intent/tweet?url=<%- post.permalink %>" class="article-share-btn" target="_blank" title="Twitter">
-        <img height="24" width="24" src="<%= theme.twitter %>"/>
+        <img height="24" width="24" src="<%- config.root %><%= theme.twitter %>"/>
       </a>
       <a href="https://www.facebook.com/sharer.php?url=<%- post.permalink %>" class="article-share-btn" target="_blank" title="Facebook">
-        <img height="24" width="24" src="<%= theme.facebook %>"/>
+        <img height="24" width="24" src="<%- config.root %><%= theme.facebook %>"/>
       </a>
       <a href="https://plus.google.com/share?url=<%- post.permalink %>" class="article-share-btn" target="_blank" title="Google+">
-        <img height="24" width="24" src="<%= theme.googleplus %>"/>
+        <img height="24" width="24" src="<%- config.root %><%= theme.googleplus %>"/>
       </a>
 
       <% if (post.comments && config.disqus_shortname){ %>

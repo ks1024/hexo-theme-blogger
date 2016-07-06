@@ -265,6 +265,12 @@ code {
   vertical-align: top;
   padding-left: 8px;
 }
+.sidebar-module .tab:hover {
+  cursor: pointer;
+}
+.sidebar-module i {
+  opacity: 0.54;
+}
 .sidebar-module-inset .section {
   border: 1px solid #eee;
   padding-bottom: 10px;

@@ -1,0 +1,23 @@
+<div class="blog-pager">
+  <a class="home-link" href="/"><i class="material-icons">home</i></a>
+    <% if (post.prev || post.next){ %>
+      <% if (post.prev){ %>
+        <span id="blog-pager-newer-link">
+          <a title="Newer posts" href="<%- url_for(post.prev.path) %>">
+            <i class="material-icons">arrow_back</i>
+          </a>
+        </span>
+      <% } else{ %>
+        <i class="material-icons disabled">arrow_back</i>
+      <% } %>
+      <% if (post.next){ %>
+        <span id="blog-pager-older-link">
+          <a title="Order posts" href="<%- url_for(post.next.path) %>">
+            <i class="material-icons">arrow_forward</i>
+          </a>
+        </span>
+      <% } else{ %>
+        <i class="material-icons disabled">arrow_forward</i>
+      <% } %>
+    <% } %>
+</div>
